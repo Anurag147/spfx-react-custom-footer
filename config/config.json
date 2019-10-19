@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "custom-footer-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/customFooter/CustomFooterApplicationCustomizer.js",
+          "manifest": "./src/extensions/customFooter/CustomFooterApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "bootstrap": {
+      "path": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+      "globalName": "bootstrap"
+    }
+  },
+  "localizedResources": {
+    "CustomFooterApplicationCustomizerStrings": "lib/extensions/customFooter/loc/{locale}.js"
+  }
+}
